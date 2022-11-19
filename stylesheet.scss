@@ -1,0 +1,814 @@
+$white:#fff;
+$purple:#7417ff;
+$green:#32CD32;
+$black:#000;
+$green-btn:#029f3c;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  height: 100%;
+}
+body.slider__body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.slider__container {
+  position: fixed;
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  -o-transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+}
+
+.slider__page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slider__indicators {
+  position: fixed;
+  left: 18px;
+  top: 50%;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.slider__indicator {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 10px 0;
+  border-radius: 100px;
+  cursor: default;
+}
+.slider__indicator--active {
+  opacity: 0.3;
+}
+#photo-gallery {
+  background-color: #626d62;
+}
+
+#section1 {
+  background: linear-gradient(90deg, rgba(196, 147, 5, 1) 0%, rgba(238, 176, 0, 1) 100%);
+}
+
+#section2 {
+  background: rgb(60, 60, 60);
+  background: linear-gradient(90deg, rgba(60, 60, 60, 1) 0%, rgba(122, 122, 122, 1) 93%);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+#section3 {
+  background-color: #f3e0e2;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#section4 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: rgb(10, 77, 181);
+  background: linear-gradient(0deg, rgba(10, 77, 181, 1) 0%, rgba(206, 63, 142, 1) 100%);
+}
+
+#section5 {
+  background: #e8ebf4;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#section6 {
+  background-color: $white;
+  background-image: url("image/yoga.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+/*************** First Section ***********/
+.login-form-s1 {
+  max-width: 1200px;
+  width: 100%;
+  min-width: 320px;
+  height: 80%;
+  background: $white;
+  border-radius: 15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 30px 0 rgba(0, 0, 0, 0.5);
+
+  .image {
+    background-image: url("image/Test7.jpg");
+    float: right;
+    height: 100%;
+    width: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .login-side {
+    padding: 50px;
+    float: left;
+    width: 35%;
+    height: 100%;
+    h1 {
+      font-size: 24px;
+      padding: 30px 0px;
+    }
+    form {
+      width: 100%;
+      height: 30%;
+      font-size: 16px;
+      .input-group {
+        width: 100%;
+        position: relative;
+        border: none;
+        border-bottom: 1px solid #7e65ee;
+
+        &:first-of-type {
+          margin-bottom: 20px;
+        }
+        input {
+          border: none;
+         background: $white;
+          display: block;
+          padding: 10px 0px 10px 0;
+          font-weight: bold;
+          width: 80%;
+          
+        }
+        input[type="password"]::placeholder,
+        input[type="password"]::-webkit-input-placeholder,
+        input[type="password"]:-moz-placeholder {
+          letter-spacing: 4px;
+          color: #5211a7;
+          font-size: 16px;
+        }
+        .ion-input {
+          width: 20%;
+          padding-right: 10px;
+          left: 280px;
+          top: 10px;
+          position: absolute;
+          color: $purple;
+          font-size: 20px;
+        }
+      }
+      a {
+        float: right;
+        font-size: 12px;
+        color: #aeb3e2;
+        padding: 5px 0px 20px 0;
+        text-decoration: none;
+        &:hover {
+          color: #747bbd;
+        }
+      }
+    }
+    button {
+      display: block;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    .btn-login {
+      background: $purple;
+      color: $white;
+      padding: 15px;
+      &:hover {
+        font-weight: bold;
+        cursor: pointer;
+        background: #5b0cd1;
+      }
+    }
+    .facebook-login {
+      border: none;
+      border-radius: 5px;
+      margin-top: 15px;
+      color: $purple;
+      background: $white;
+      border: 2px solid rgba(116, 23, 255, 0.2);
+      vertical-align: middle;
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 12px;
+      &:hover {
+        font-weight: bold;
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+        color: $purple;
+      }
+      .ion {
+        font-size: 22px;
+        padding-right: 6px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+.create-account {
+  p,
+  a {
+    color: #636262;
+    text-decoration: none;
+    display: inline;
+    font-size: 12px;
+    &:hover {
+      color: #574949;
+      font-weight: bold;
+    }
+  }
+}
+
+/*************** Second Section ***********/
+.login-form-s2{
+  max-width: 800px;
+  width: 100%;
+  min-width: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.2);
+  form{
+    display: flex;
+    background-color: $white;
+    border-radius: 10px;
+    justify-self:center;
+    .info{
+     display: flex;
+     flex-direction: column;
+     justify-items: center;
+     
+      .input-email , .input-password{
+        background:#f5f1f1;
+        margin: auto;
+        border-radius: 30px;
+        width: 80%;
+        height: 50px;
+        margin-bottom: 20px;
+        .Text-Item{
+          border: none;
+          background: none;
+          padding: 10px;
+          width: 80%;
+          height: 50px;
+        }
+        .Icon-Item{
+          color: #b79f87;
+          font-size: 18px;
+          padding-top:10px;
+         
+       
+        
+          
+          }
+      }
+      button{
+        background: #b79f87;
+        border-radius: 30px;
+        width: 80%;
+        height: 50px;
+        margin: auto;
+        
+      }
+    }
+  }
+}
+ 
+/*************** Third Section ***********/
+.login-form-s3 {
+  background-color:  $white;
+  max-width: 800px;
+  width: 100%;
+  min-width: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.2);
+  .left {
+    width: 50%;
+    background-color:   $white;
+    border-radius: 8px 0px 0px 8px;
+    height: 100%;
+    padding: 40px 20px 0px 20px;
+    float: left;
+    form {
+      input {
+        width: 100%;
+        background: #eeeeee;
+        margin-bottom: 20px;
+        padding: 15px;
+        border: none;
+      }
+      h3 {
+        padding-top: 20px;
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .social-media {
+        font-size: 30px;
+        text-align: center;
+      }
+      .ion-inside {
+        border: 0.5px solid gray;
+        border-radius: 100px;
+        padding: 5px;
+       background:  $white;
+        color: $black;
+        margin-bottom: 20px;
+        margin-right: 10px;
+        margin-top: 20px;
+      }
+      a {
+        text-decoration: none;
+        display: block;
+        margin-bottom: 15px;
+      }
+      button {
+        background: #ff4a2b;
+        color : $white;
+        font-size: 16px;
+        margin-left: 120px;
+        border-radius: 30px;
+        padding: 10px 40px;
+        text-align: center;
+        border: none;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .right {
+    color : $white;
+    background: linear-gradient(90deg, #db9167 0%, #bd5163 100%);
+    width: 50%;
+    float: right;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    justify-content: center;
+    height: 537px;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      text-align: center;
+      font-weight: bold;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 40px;
+      margin-top: 100px;
+    }
+    .par {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 16px;
+      text-align: center;
+      color: #f2e3e3;
+      font-weight: 30px;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    }
+  }
+  p,
+  a {
+    text-align: center;
+    color: rgb(150, 150, 150);
+  }
+}
+
+/*************** 4th Section ***********/
+.login-form-s4 {
+  form {
+    height: 550px;
+    max-width: 600px;
+    min-width: 100px;
+    background-color: rgb(241, 234, 234);
+    left: 50%;
+    top: 20%;
+    padding: 20px;
+    position: absolute;
+    transform: translate(-50%, -5%);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgb(87, 85, 85);
+
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 30px;
+      padding-bottom: 20px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+    .signinput {
+      width: 100%;
+      height: 50px;
+      padding: 10px;
+      display: block;
+      margin-bottom: 10px;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom: 1px solid $black;
+      font-size: 15px;
+      background-color: rgb(241, 234, 234);
+    }
+    .signinput2 {
+      height: 50px;
+      display: inline;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom: 1px solid $black;
+      padding: 10px;
+      font-size: 16px;
+      background-color: rgb(241, 234, 234);
+    }
+    .signinput2:first-child {
+      margin-right: 10px;
+    }
+
+    .btnsign {
+      width: 70%;
+      height: 10%;
+      border-radius: 50px;
+      color : $white;
+      font-size: 20px;
+      background: rgb(173, 101, 177);
+      background: linear-gradient(
+        90deg,
+        rgba(173, 101, 177, 1) 0%,
+        rgba(113, 187, 255, 1) 93%
+      );
+      border: none;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 30px;
+      margin-left: 15%;
+      cursor: pointer;
+    }
+  }
+}
+
+/*************** 5th Section ***********/
+.login-form-s5 {
+  .reg-form {
+    max-width: 400px;
+    width: 100%;
+    min-width: 320px;
+    background-color : $white;
+    left: 50%;
+    top: 50%;
+    padding: 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 26px;
+      margin-bottom: 50px;
+      font-weight: bold;
+    }
+    .div-input {
+      background-color: #e9ecef;
+      width: 100%;
+      display: inline-block;
+      padding: 15px;
+      margin-bottom: 15px;
+      align-items: center;
+      input {
+        width: 80%;
+        border: none;
+        font-size: 20px;
+        color: #495057;
+        background-color: #e9ecef;
+        margin-left: 10px;
+        text-align: left;
+      }
+      .ion-icon {
+        width: 10%;
+        color: #818181;
+        display: inline-block;
+        font-size: 20px;
+        background-color: #e9ecef;
+        text-align: center;
+      }
+    }
+    .check {
+      width: 100%;
+      display: inline-block;
+
+      padding: 5px;
+      margin-bottom: 15px;
+      align-items: center;
+
+      .input-check {
+        width: 20px;
+        size: 100px;
+        height: 20px;
+      }
+      #paragraph {
+        color: gray;
+        width: 80%;
+        display: inline-block;
+        margin-left: 2px;
+        font-size: 18px;
+      }
+    }
+    .btn-login {
+      width: 100%;
+      background-color: #ce3f8e;
+      color : $white;
+      padding: 15px 10px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 1px;
+    }
+
+    .other {
+      color: gray;
+      text-align: center;
+      font-size: 18px;
+      padding: 10px;
+    }
+    .div-other {
+      border: 1px solid gray;
+      background-color : $white;
+      width: 48%;
+      display: inline-block;
+      text-align: center;
+      align-items: center;
+      padding: 3px 10px;
+      .btn-other {
+        background-color : $white;
+        border: none;
+        padding: 5px;
+        margin-left: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        color: $black;
+        opacity: 75%;
+      }
+      .ion {
+        font-size: 20px;
+        text-align: center;
+      }
+      .btn-other-f {
+        color: blue;
+      }
+    }
+    .sign-up {
+      color: gray;
+      text-align: center;
+      font-size: 18px;
+      padding-top: 30px;
+    }
+  }
+}
+
+.circle{
+  background: #4426ff;
+  width:1800px;
+  height: 1800px;
+  border-radius: 50%;
+  position: absolute;
+  left:30%;
+  top:-4%;
+}
+.main{
+  max-width:1200px;
+  width:100%;
+  min-width:320px;
+  position: absolute;
+ background:  $white;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  height: 80%;
+  border-radius: 20px;
+  box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.01);
+  background-image: url('pic.png');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+
+
+  
+}
+.main header{
+  height: 15%;
+  width: 100%;
+  padding: 50px;
+
+}
+
+.main header .logo {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #e8f0fa;
+}
+
+.main header nav{
+  padding-left: 30px;
+  position: absolute;
+  top: 50px;
+}
+
+.main header nav ul li{
+  display: inline;
+  padding-left: 30px;
+}
+a{
+  text-decoration: none;
+  color:$black;
+  &:hover{
+    font-weight: bold;
+    color: #3325f9;
+  }
+}
+.main header .btn-login{
+ background:   $white;
+  float: right;
+  position: absolute;
+  left: 85%;
+  top:8%;
+  padding: 8px 20px;
+  border-radius:15px;
+  font-size: 14px;
+  border:1px solid rgb(83, 83, 83);
+  &:hover{
+    color : $white;
+    box-shadow: 0 0 2px 2px rgba(51, 37, 249, 0.4);
+    background-color: #3325f9;
+    cursor: pointer;
+   
+  }
+  
+}
+
+
+.title{
+  width: 100%;
+  height:32%;
+  text-align:center;
+  padding-top: 30px;
+  .des{
+    h1{
+      font-size: 46px;
+      margin-bottom: 10px;
+    }
+    p{
+      font-size: 20px;
+      margin-bottom:25px;
+    }
+    .btn-more{
+      padding: 8px 40px;
+     background:  $white;
+      font-size: 20px;
+      border: none;
+      border:1px solid rgb(83, 83, 83);
+      text-align: center;
+      border-radius: 6px;
+      text-transform: uppercase;
+      &:hover{
+        box-shadow: 0 0 2px 2px rgba(51, 37, 249, 0.4);
+        background: #3325f9;
+        cursor: pointer;
+        color : $white;
+      }
+    
+    }
+    
+
+  }
+  
+  
+}
+
+
+/*************** 6th Section ***********/
+.login-form-s6{
+  header{
+    width:100%;
+    height:100px;
+  
+    .logo{
+      color: #1f509f;
+      font-weight: bold;
+      font-size: 20px;
+      line-height:100px;
+      float: left;
+  }
+  nav{
+    margin-left: 40%;
+    line-height:100px;
+    ul{
+      float:right;
+      li{
+        display: inline;
+        padding: 0 30px;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        a{
+          text-decoration: none;
+          color: #1f509f;
+          &:hover{
+            color: #9fd170 ;
+          }
+      }
+    }
+  }
+  
+}
+.btn-sign{   
+  float: left;
+  background: #1f509f;
+  color:white;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin:28px auto 0px 20px;
+  padding: 10px 30px;
+  display: block;
+  border-radius:25px;
+  border: none;
+  &:hover{
+    background: #9fd170 ;
+    color:white;
+    cursor: pointer;
+}
+  
+}
+}
+
+.hero{
+  aside{
+    width: 40%;
+    height: 50%;
+    float: right;
+    margin-top: 120px;
+    margin-left:70%;
+    h1{
+      font-size: 50px;
+      color: #1f509f;
+      
+  }
+
+  p{
+    line-height:25px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: #1f509f;
+    font-size: 20px;
+}
+.start{
+  background:#9fd170 ;
+  padding:15px 35px;
+  color: white;
+  font-size: 20px;
+  border-radius: 25px;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 20px;
+  &:hover{
+    background: #1f509f;
+    cursor: pointer;
+   
+}
+}
+}
+}
+}

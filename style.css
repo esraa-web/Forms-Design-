@@ -1,0 +1,232 @@
+body,
+html {
+  height: 100%;
+}
+
+body.slider__body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.slider__container {
+  position: fixed;
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  -o-transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+}
+
+.slider__page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slider__indicators {
+  position: fixed;
+  left: 18px;
+  top: 50%;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.slider__indicator {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 10px 0;
+  border-radius: 100px;
+  background-color: #fff;
+  cursor: default;
+}
+.slider__indicator--active {
+  opacity: 0.3;
+}
+
+
+
+/* First Section  */
+.login-form{
+    max-width: 1200px;
+    width: 100%;
+    min-width: 320px;
+    height: 80%;
+    background: white;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 5px 5px 30px 0 rgba(0, 0, 0,0.5);
+   
+}
+
+/***********************IMAGE SIDE*************************/
+/***********************************************************/
+.login-form .image{
+    background-image: url('image/Test7.jpg');
+    float: right;
+    height: 100%;
+    width: 65%;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/************************LOGIN FORM**************************/
+/***********************************************************/
+.login-form  .login-side{
+    padding: 50px;
+    float: left;
+    width: 35%;
+    height: 100%;
+
+}
+.login-form  .login-side h1{
+   font-size: 24px;
+    padding: 30px 0px;
+}
+.login-form  .login-side form{
+    width: 100%;
+    height: 30%;
+    font-size: 16px;
+}
+.login-form  .login-side form .input-group{
+    width: 100%;
+    position: relative;
+    border:none;
+    border-bottom :1px solid #7e65ee;
+
+
+}
+.login-form  .login-side form .input-group:first-of-type{
+    margin-bottom: 20px;
+}
+ form .input-group input{
+    border:none;
+    background: white;
+    display: block;
+    padding: 10px 0px 10px 0;
+    font-weight: bold;
+    width: 80%;
+}
+
+input[type="password"]::placeholder,
+input[type="password"]::-webkit-input-placeholder,
+input[type="password"]:-moz-placeholder{
+    letter-spacing: 4px;
+    color: #5211a7;
+    font-size: 16px;
+}
+
+form .input-group .ion-input{
+    width: 20%;
+    padding-right:10px ;
+    left:280px;
+    top:10px;
+   position: absolute;
+    color: #7417ff;
+    font-size:20px;
+ 
+}
+
+form a{
+    float:right;
+    font-size: 12px;
+    color:#aeb3e2;
+    padding: 5px 0px 20px 0;
+    text-decoration: none;
+}
+form a:hover{
+    color:#747bbd;
+}
+/********************************************/
+
+.login-side button{
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin-top:15px;
+    font-size: 14px;
+}
+.login-side .btn-login{
+    background:#7417ff;
+    color: white;
+    padding:15px;
+}
+.btn-login:hover{
+    font-weight: bold;
+    cursor: pointer;
+    background:#5b0cd1;
+}
+/*******************************************************/
+/******************facebook-login**********************/
+
+.login-side .facebook-login{
+    border: none;
+    border-radius: 5px;
+    margin-top:15px;
+    color: #7417ff;
+    background: white;
+    border: 2px solid rgba(116, 23, 255,0.2);
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 30px;
+    padding:12px;
+}
+.facebook-login:hover{
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.facebook-login a{
+    text-decoration: none;
+    color: #7417ff;
+}
+.login-side .facebook-login .ion{
+    font-size: 22px;
+    padding-right: 6px;
+    vertical-align: middle;
+}
+
+/*******************************************************/
+/******************Create account**********************/
+
+.create-account p , .create-account a{
+    color: #636262;
+    text-decoration: none;
+    display: inline;
+    font-size: 12px;
+}
+.create-account a:hover{
+    color: #574949;
+    font-weight: bold;
+
+}
+/*******************************************************/
+/******************copy right**********************/
+.footer{
+    color: #a19f9f;
+    font-size: 12px;
+    padding:30px 0 10px 0;
+}
+
+
+/* Section 2 */
+
+
+
+
